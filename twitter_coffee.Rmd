@@ -26,7 +26,7 @@ coffee_tweets <- search_tweets(
 )
 
 coffee_tweets %>% 
-  delect(-hashtags, -symbols, -urls_url, -urls_t.co) %>% 
+  select(-hashtags, -symbols, -urls_url, -urls_t.co) %>% 
   write_csv("coffee_7_10_21.csv")
 ```
 
