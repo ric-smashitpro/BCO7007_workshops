@@ -1,4 +1,4 @@
-# installed.packages("janeaustenr")
+# install.packages("janeaustenr")
 
 library(tidyverse)
 library(tidytext)
