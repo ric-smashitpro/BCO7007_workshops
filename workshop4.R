@@ -1,3 +1,7 @@
+# Sentiment Analysis Part 1
+# Session 5
+# Date: 19/10/2021
+
 library(tidyverse)
 library(tidytext)
 library(janeaustenr)
@@ -42,4 +46,3 @@ jane_austen_sentiment %>%
              fill = book)) +
   geom_col(show.legend = FALSE) +
   facet_wrap(~book, ncol = 2, scales = "free_x")
-
