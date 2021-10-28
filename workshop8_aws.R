@@ -90,6 +90,13 @@ length(resp$FaceMatches)
 
 resp$FaceMatches[[1]]$Similarity
 
+# The response of Rekognition's compare faces endpoint
+# also includes bounding box coordinates for items that are detected in images
+# https://docs.aws.amazon.com/rekognition/latest/dg/images-displaying-bounding-boxes.html
+
+# use the magick package to add the bounding box of the person
+# who Rekognition identified as the thief to the image of the suspects.
+
 # install.packages("magick")
 library(magick)
 
