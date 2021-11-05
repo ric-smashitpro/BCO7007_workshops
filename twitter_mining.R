@@ -3,7 +3,8 @@ library(rtweet)
 
 # repeat every week
 data <- search_tweets(
-  q = "Melbourne",
+  q = "melbourne",
+  # q = "matcha",
   n=18000,
   include_rts = FALSE,
   lang = "en",
@@ -12,12 +13,11 @@ data <- search_tweets(
 
 data <- data %>% flatten()
 
-
 # Change the name of the file
 # if you don't you are going to lose your data!
 
-data %>% write_csv("Melbourne_12_10_2021.csv")
-
+data %>% write_csv("melbourne_05_11_2021.csv")
+# data %>% write_csv("matcha_02_11_2021.csv")
 
 #---------------------
 # Merge all CSV files at the end - when you start your assessment
